@@ -1,0 +1,58 @@
+.active {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: lightgreen;
+}
+.about {
+  font-weight: semi-bold;
+  letter-spacing: 2px;
+}
+
+.hire_con {
+  padding: 5px 10px;
+  font-size: 10px;
+  font-weight: 600;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: ease-out 0.3s;
+  background-color: white;
+}
+
+.hire_con:hover {
+  box-shadow: inset 100px 100px 0px 1px black;
+  .hire_btn {
+    color: rgb(255, 255, 255);
+  }
+}
+
+.hire_btn {
+  color: black;
+}
+
+.greet {
+  color: white;
+  background-color: lightcoral;
+}
+
+.desktop {
+  font-weight: 600;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .about {
+    font-size: small;
+  }
+  .desktop {
+    flex-direction: column;
+  }
+  .mobile {
+    width: 18rem;
+  }
+}

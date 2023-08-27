@@ -1,0 +1,29 @@
+<div class="d-flex my-xl-4 gap-3 gap-lg-3 gap-xl-3 flex-column page-warp">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12 my-4 align-items-center">
+        <h5 class="text-center text-uppercase about col-12 col-lg-12 col-xl-12">About Me</h5>
+      </div>
+    </div>
+  </div>
+  <div class="container col-10 col-lg-5 col-xl-3 gap-3 desktop">
+    <img class="col-6 col-sm-6 col-lg-9 col-xl-12 mobile" [src]="profile_img" />
+    <div class="d-flex flex-column  text-uppercase gap-3  ">
+      <span class="greet text-center col-3 col-xl-3 p-1 my-3">{{great}}</span>
+      <span>{{name}}</span><span>{{role}}</span><span >linkedin <a [href]="profile_link" target="_blank">
+        <img class="col-1 col-lg-1 col-xl-1" [src]="linkedin_img" /></a></span>
+      <div class="d-flex flex-row align-items-center">
+        <span>active</span>
+        <div class="active mx-2"></div>
+      </div>
+      <div class="action_btn d-flex flex-row gap-4">
+        <button class="hire_con">
+          <a  target="_blank" [href]="email"  target="_top" class="hire_btn text-decoration-none">Hire Me</a>
+        </button>
+        <button class="hire_con">
+          <a target="_blank"  [href]="profile_resume" class="hire_btn  text-decoration-none">Eye on my resume </a>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

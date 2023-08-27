@@ -1,0 +1,120 @@
+<div class="col-12 col-lg-12 col-xl-12 my-4 d-flex flex-column main align-items-center justify-content-center page-warp">
+  <div class="col-12 col-lg-12 col-xl-12 d-flex flex-row align-items-center justify-content-center gap-3" >
+    <img class="col-1 col-lg-1 col-xl-1 work_img" [src]="work_img" alt="" />
+    <span class="text-uppercase work_text">My Design's</span>
+  </div>
+  <div class="col-12 col-lg-12 col-xl-12 my-5 d-flex flex-row align-items-center justify-content-center" >
+    <div class="con_left d-flex align-items-center justify-content-center">
+      <svg
+        (click)="scrollRight()"
+        viewBox="0 0 1024 1024"
+        class="icon"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="#000000"
+      >
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g
+          id="SVGRepo_tracerCarrier"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></g>
+        <g id="SVGRepo_iconCarrier">
+          <path
+            d="M768 903.232l-50.432 56.768L256 512l461.568-448 50.432 56.768L364.928 512z"
+            fill="#000000"
+          ></path>
+        </g>
+      </svg>
+    </div>
+
+    <div class="content d-flex flex-row align-items-center col-12 col-lg-12 col-xl-11" #videoRow >
+      <div class="video-container d-flex align-items-center justify-content-center col-12 col-lg-12 col-xl-12" *ngFor="let work of videos; let i = index" >
+        <video id="video" #videoPlayer class="col-12 col-lg-12 col-xl-12"  [src]="work.videos" ></video>
+        <div class="play-pause-button" (click)="togglePlayPause(videoPlayer, i)" >
+          <svg
+            [ngClass]="{ pause: !isVideoPlaying[i] }"
+            fill="#000000"
+            height="200px"
+            width="200px"
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 512 512"
+            xml:space="preserve"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M256,0C114.617,0,0,114.615,0,256s114.617,256,256,256s256-114.615,256-256S397.383,0,256,0z M224,320 c0,8.836-7.164,16-16,16h-32c-8.836,0-16-7.164-16-16V192c0-8.836,7.164-16,16-16h32c8.836,0,16,7.164,16,16V320z M352,320 c0,8.836-7.164,16-16,16h-32c-8.836,0-16-7.164-16-16V192c0-8.836,7.164-16,16-16h32c8.836,0,16,7.164,16,16V320z"
+              ></path>
+            </g>
+          </svg>
+          <svg
+            [ngClass]="{ play: isVideoPlaying[i] }"
+            fill="#000000"
+            height="200px"
+            width="200px"
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 512.055 512.055"
+            xml:space="preserve"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <g>
+                <g>
+                  <path
+                    d="M500.235,236.946L30.901,2.28C16.717-4.813,0.028,5.502,0.028,21.361v469.333c0,15.859,16.689,26.173,30.874,19.081 l469.333-234.667C515.958,267.247,515.958,244.808,500.235,236.946z M42.694,456.176V55.879l400.297,200.149L42.694,456.176z"
+                  ></path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="con_right d-flex align-items-center justify-content-center">
+      <svg
+        (click)="scrollLeft()"
+        viewBox="0 0 1024 1024"
+        class="icon"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="#000000"
+      >
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g
+          id="SVGRepo_tracerCarrier"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></g>
+        <g id="SVGRepo_iconCarrier">
+          <path
+            d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z"
+            fill="#000000"
+          ></path>
+        </g>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<footer class="col-12 col-sm-12 col-lg-12 col-xl-12 flex-column text-center gap-2 d-flex">
+  <h4 class="text-capitalize">Thank you for visiting</h4>
+  <p>Designed By VENKATESH KOPPISETTI</p>
+</footer>

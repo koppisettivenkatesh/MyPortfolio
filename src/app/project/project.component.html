@@ -1,0 +1,35 @@
+<div class=" my-4 d-flex flex-column main align-items-center justify-content-center page-warp">
+  <div class=" col-12 col-lg-12 col-xl-12 d-flex flex-row align-items-center justify-content-center gap-3">
+    <img class=" col-1 col-lg-1 col-xl-1 project_img" [src]="project_img" alt="" alt="" />
+    <span class="text-uppercase fw-bold  pro " >Project's</span>
+  </div>
+    <div class="project_bar_con my-5 gap-3 col-11 col-sm-10 col-xl-12">
+      <div class="col-11 col-sm-6 col-xl-5 d-flex gap-5 gap-xl-5 flex-column ">
+        <div class="box arrow-right" *ngFor="let project of projects">
+          <div class="color_bar"></div>
+          <div class="left_project p-4 d-flex flex-column gap-2">
+            <span class="project_name fw-bold">{{project.url.title}}</span>
+            <span class="period text-capitalize">{{project.url.period}}</span>
+            <strong class="project_details" >{{project.url.p_details}}</strong>
+            <span class="text-capitalize">{{project.url.p_description}}</span>
+            <strong class="text-capitalize">{{project.url.r_role}}</strong>
+            <span>{{project.url.r_description}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-11 col-sm-6 col-xl-5 d-flex gap-5 gap-3 my-5 d-flex flex-column right">
+        <div class="box arrow-left" *ngFor="let project of right_projects">
+          <div class="color_bar"></div>
+          <div class="left_project p-4 d-flex flex-column gap-2" >
+            <span class="project_name fw-bold ">{{project.url.title}}</span>
+            <span class="period text-capitalize ">{{project.url.period}}</span>
+            <strong class="project_details" >{{project.url.p_details}}</strong>
+            <span class="text-capitalize" >{{project.url.p_description}}</span>
+            <strong class="text-capitalize">{{project.url.r_role}}</strong>
+            <span>{{project.url.r_description}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
